@@ -53,7 +53,7 @@ export const login = async (req, res) => {
             res.cookie('token', token, { sameSite: 'none', secure: true }).json({
                 user: {
                     '_id': foundUser._id,
-                    'username': foundUser.username
+                    'username': foundUser.username 
                 },
             });
         });

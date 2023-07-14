@@ -25,7 +25,7 @@ export const register = async (req, res) => {
             res.cookie('token', token, { sameSite: 'none', secure: true }).status(201).json({
                 user: {
                     '_id': savedUser._id,
-                    'username': savedUser.username
+                    'username': savedUser.username fefe
                 },
             });
         });
@@ -53,7 +53,7 @@ export const login = async (req, res) => {
             res.cookie('token', token, { sameSite: 'none', secure: true }).json({
                 user: {
                     '_id': foundUser._id,
-                    'username': foundUser.username 
+                    'username': foundUser.username
                 },
             });
         });
